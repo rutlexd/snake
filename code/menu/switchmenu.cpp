@@ -33,7 +33,9 @@ void show(int key){
     }
     
 }
+
 int key = 1;
+
 void showMenu(){
     int keyPressed;
     show(1);

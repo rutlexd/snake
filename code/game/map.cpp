@@ -1,9 +1,9 @@
 #include <iostream>
 
 void drawBorder();
-void drawBorder(int score, int sx, int sy, int ax, int ay);
+void drawBorder(int score);
 
-const int RAWS = 27;
+const int RAWS = 24;
 const int COLUMNS = 36;
 char SnakeHead = 'O';
 char Apple = 'A';
@@ -11,7 +11,7 @@ void drawMap(int snakex, int snakey, int applex, int appley, int score){
 
 int  befSH, aftSH, befA, aftA, midSA, midAS, fill, raw;
 
-drawBorder(score, snakex, snakey, applex, appley);
+drawBorder(score);
 for (raw = 0; raw < RAWS; raw++){
     cout<<"*";
     if (raw == snakey && raw != appley){    //draw raw with snake head
@@ -69,11 +69,11 @@ for (raw = 0; raw < RAWS; raw++){
 drawBorder();
 }
 
-void drawBorder(int score,int sx,int sy,int ax,int ay){     // Draw border with score and cords
+void drawBorder(int score){     // Draw border with score and cords
     for (int i = 0; i < COLUMNS; i++){
         cout<<"*";
     }
-    cout<<"\tscore: "<<score<<" x,y "<<sx<<" "<<sy<<" "<<ax<<" "<<ay<<endl;
+    cout<<"\tscore: "<<score<<endl;
 }
 void drawBorder(){      //Draw only border
     for (int i = 0; i < COLUMNS; i++){

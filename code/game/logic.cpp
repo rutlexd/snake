@@ -32,7 +32,7 @@ int moveX(int Ukey,int snakeHeadX){     //move snake head in X
     return snakeHeadX;
 }
 
-int moveY(int Ukey, int snakeHeadY){    //move snake head in Y
+int moveY(int Ukey, int snakeHeady){    //move snake head in Y
     if (Ukey == 3){
         snakeHeady--;
     }

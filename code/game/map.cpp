@@ -3,8 +3,8 @@
 void drawBorder();
 void drawBorder(int score, int sx, int sy, int ax, int ay);
 
-const int RAWS = 10;
-const int COLUMNS = 15;
+const int RAWS = 27;
+const int COLUMNS = 36;
 char SnakeHead = 'O';
 char Apple = 'A';
 void drawMap(int snakex, int snakey, int applex, int appley, int score){

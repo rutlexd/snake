@@ -7,7 +7,7 @@ using namespace std;
 int checkMenu(int key);
 
 int main(){
-cout << "\e[8;27;90t";
+cout << "\e[8;27;36t";
 showMenu();
 checkMenu(key);
 }
